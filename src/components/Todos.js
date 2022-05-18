@@ -10,7 +10,9 @@ const Todos = ({ isReload }) => {
 		isLoading,
 		refetch,
 	} = useQuery(["todos", isReload], () =>
-		fetch("http://localhost:5000/todo").then(res => res.json())
+		fetch("https://sheltered-cliffs-16466.herokuapp.com/todo").then(res =>
+			res.json()
+		)
 	);
 
 	if (isLoading) {
