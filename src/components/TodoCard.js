@@ -6,7 +6,7 @@ const TodoCard = ({ todo, refetch }) => {
 
 	// handle todo item delete
 	const handleDelete = id => {
-		fetch(`https://sheltered-cliffs-16466.herokuapp.com/todo/${_id}`, {
+		fetch(`https://todo-app-server-teal.vercel.app/todo/${_id}`, {
 			method: "DELETE",
 			headers: { "content-type": "application/json" },
 		})
@@ -19,7 +19,7 @@ const TodoCard = ({ todo, refetch }) => {
 
 	// handle todo item complete
 	const handleComplete = id => {
-		fetch(`https://sheltered-cliffs-16466.herokuapp.com/todo/${_id}`, {
+		fetch(`https://todo-app-server-teal.vercel.app/todo/${_id}`, {
 			method: "PUT",
 			headers: { "content-type": "application/json" },
 		})

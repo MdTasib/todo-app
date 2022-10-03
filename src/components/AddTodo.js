@@ -8,7 +8,7 @@ const AddTodo = ({ reload: [isReload, setIsReload] }) => {
 		const name = event.target.name.value;
 		const description = event.target.description.value;
 
-		fetch("https://sheltered-cliffs-16466.herokuapp.com/todo", {
+		fetch("https://todo-app-server-teal.vercel.app/todo", {
 			method: "POST",
 			headers: {
 				"content-type": "application/json",
